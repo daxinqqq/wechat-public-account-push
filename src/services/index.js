@@ -135,6 +135,7 @@ export const getBirthdayMessage = () => {
   const birthdayList = sortBirthdayTime(config.FESTIVALS)
   console.log(birthdayList);
   let resMessage = ''
+  const wechatTestBirthdayMessage = []
 
   birthdayList.forEach((item, index) => {
     if (
