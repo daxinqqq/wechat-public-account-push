@@ -158,14 +158,20 @@ export const getBirthdayMessage = () => {
 
       // 存储数据
       if (message) {
-        resMessage += `${message} \n`
+        //resMessage += `${message} \n`
+        resMessage += `${message} ${getLB()}`
+        wechatTestBirthdayMessage.push({
+          name: toLowerLine(`wxBirthday_${index}`),
+          value: message,
+          color: getColor()
+        })
       }
 
     }
 
   })
 
-  return resMessage
+  return {resMessage, wechatTestBirthdayMessage}
 }
 
 /**
