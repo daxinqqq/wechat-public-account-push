@@ -2,7 +2,7 @@ import { config } from '../../config/index.js'
 import { CITY_INFO, TYPE_LIST } from '../store/index.js'
 import axios from 'axios'
 import dayjs from 'dayjs'
-import { randomNum, sortBirthdayTime } from '../utils/index.js'
+import { randomNum, sortBirthdayTime, toLowerLine, getColor } from '../utils/index.js'
 
 /**
  * 获取 accessToken
