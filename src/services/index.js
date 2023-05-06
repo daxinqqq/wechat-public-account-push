@@ -32,7 +32,13 @@ export const getAccessToken = async () => {
   return accessToken
 }
 
-
+// 使用单空行还是双空行
+const getLB = () => {
+  if (!config.USE_PASSAGE || config.USE_PASSAGE === 'wechat-test') {
+    return '\n'
+  }
+  return '\n\n'
+}
 
 /**
  * 获取天气情况
