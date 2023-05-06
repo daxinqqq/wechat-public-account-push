@@ -64,6 +64,7 @@ const main = async () => {
         { name: toLowerLine('oneTalk'), value: oneTalk, color: getColor() },
         { name: toLowerLine('talkFrom'), value: talkFrom, color: getColor() },
     ].concat(dateDiffParams.concat(slotParams))
+    .concat(birthdayMessage)
 
     // 公众号推送消息
     const sendMessageTemplateId = config.TEMPLATE_ID
