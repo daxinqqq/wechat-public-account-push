@@ -44,6 +44,20 @@ export const getColor = () => {
 }
 
 /**
+ * 驼峰转下划线
+ * @param {*} str
+ * @returns
+ */
+export const toLowerLine = (str) => {
+  let temp = str.replace(/[A-Z]/g, (match) => `_${match.toLowerCase()}`)
+  if (temp.slice(0, 1) === '_') { // 如果首字母是大写，执行replace时会多一个_，这里需要去掉
+    temp = temp.slice(1)
+  }
+  return temp
+}
+
+
+/**
  * 获取天气情况
  * @param {*} province 省份
  * @param {*} city 城市
