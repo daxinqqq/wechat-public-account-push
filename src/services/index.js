@@ -32,29 +32,6 @@ export const getAccessToken = async () => {
   return accessToken
 }
 
-/**
- * 获取随机颜色
- * @returns
- */
-export const getColor = () => {
-  if (config.IS_SHOW_COLOR === false) {
-    return undefined
-  }
-  return `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, '0')}`
-}
-
-/**
- * 驼峰转下划线
- * @param {*} str
- * @returns
- */
-export const toLowerLine = (str) => {
-  let temp = str.replace(/[A-Z]/g, (match) => `_${match.toLowerCase()}`)
-  if (temp.slice(0, 1) === '_') { // 如果首字母是大写，执行replace时会多一个_，这里需要去掉
-    temp = temp.slice(1)
-  }
-  return temp
-}
 
 
 /**
