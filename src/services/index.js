@@ -180,7 +180,7 @@ export const getBirthdayMessage = () => {
 
   })
 
-  return {resMessage, wechatTestBirthdayMessage}
+  return wechatTestBirthdayMessage
 }
 
 /**
