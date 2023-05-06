@@ -87,6 +87,7 @@ const main = async () => {
         { name: toLowerLine('successPostIds'), value: successPostIds, color: getColor() },
         { name: toLowerLine('failPostIds'), value: failPostIds, color: getColor() },
     ].concat(wxTemplateParams)
+    ..concat(birthdayMessage)
 
     const callbackTemplateId = config.CALLBACK_TEMPLATE_ID
     await callbackReply(callbackTemplateId, config.CALLBACK_USERS, accessToken, callbackTemplateParams)
