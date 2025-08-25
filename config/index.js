@@ -74,7 +74,7 @@ export const config = {
       // 在一起的日子
       {"keyword": "love_day", date: "2014-09-10"},
       // 结婚纪念日
-      //{"keyword": "marry_day", date: "2020-01-04"},
+      {"keyword": "marry_day", date: "2025-07-20"},
       // 退伍日, 不用可以删掉
       //{"keyword": "ex_day", date: "2022-08-31"},
       // sakana日
